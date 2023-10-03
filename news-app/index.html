@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <nav>
+            
+            <h2>News App</h2>
+            <ul>
+                <li id="finance" class="navItem" onclick="NavClick('finance')">Finance</li>
+                <li id="india" class="navItem"  onclick="NavClick('india')">India</li>
+                <li class="navItem" id="sports"onclick="NavClick('sports')">Sports</li>
+                <li class="navItem" id="politics"onclick="NavClick('politics')">Politics</li>
+            </ul>
+          
+            <input type="text" id="input"placeholder=" Eg. Elon Musk">
+            <button id="submit"class="submit"> Search</button>
+       
+        </nav>
+      
+        <marquee width="60%" direction="left" height="100px">
+            Get latest news on our Website The News App
+            </marquee>
+            <button id="dark">Enable</button>
+            
+        <div id="card-container">
+
+        </div>
+
+      <template class="content" id="cards-maker" >
+        <div class="cards" >
+            <img src="https://via.placeholder.com/400x200" alt="" id="newImg">
+            <div class="inner-content">
+            <h1 id="title" >Lorem ipsum dolor sit amet consectetur.</h1>
+            <h3 id="source" >source</h3>
+            <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repellat quis earum animi eligendi officia magni architecto provident, delectus harum dignissimos velit doloribus molestias dolores vero, aliquid porro beatae reiciendis! Optio blanditiis placeat libero.</p>
+        </div>
+        </div>
+      
+      </template>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
