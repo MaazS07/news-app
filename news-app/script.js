@@ -1,5 +1,5 @@
 
-const APIkey="b0af7d4f9bf44cc5bfe33f912982afe0";
+const APIkey="YOUR_API_KEY";
 const url="https://newsapi.org/v2/everything?q=";
 const body=document.querySelector("body");
 const container= document.querySelector("#card-container");
